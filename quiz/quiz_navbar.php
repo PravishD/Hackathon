@@ -17,7 +17,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Phishing scams</a>
+                } ?> href="/hackathon/quiz/phishingquiz.php">Phishing scams</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "identity theft") {
