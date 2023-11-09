@@ -74,18 +74,7 @@ https://templatemo.com/tm-588-ebook-landing
 
         <main>
 
-        <script>
-            window.embeddedChatbotConfig = {
-            chatbotId: "Fibkt4bxRnVTgZYguEMkn",
-            domain: "www.chatbase.co"
-            }
-            </script>
-            <script
-            src="https://www.chatbase.co/embed.min.js"
-            chatbotId="Fibkt4bxRnVTgZYguEMkn"
-            domain="www.chatbase.co"
-            defer>
-        </script>
+       
 
 
             <section>
@@ -93,7 +82,7 @@ https://templatemo.com/tm-588-ebook-landing
                     <div class="row">
 
                         <div class="col-lg-4 col-12">
-                            <button class="btn btn-dark d-lg-none" id="toggleNavbar">Toggle Navbar</button>
+                           
                             <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
                                 <nav class="nav nav-pills flex-column">
                                     <a class="nav-link smoothscroll" href="#item-1"><strong>Phishing</strong></a>
@@ -461,58 +450,53 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
                         <div class="col-lg-5 col-12 mx-auto">
                         <form class="custom-form ebook-download-form bg-white shadow" action="#" method="post" role="form">
                                 <div class="ebook-download-form-body">
-                                    <img src="fotterimage.png" alt="">
+                                    <img src="..\fotterimage.png" alt="">
                                 </div>
                             </form>
                         </div>
 
                         <div class="col-lg-6 col-12">
-                            <h6 class="mt-5">Say hi and talk to us</h6>
+                            
 
-                            <h2 class="mb-4">Contact</h2>
+                            <h2 class="mb-4">Online Fraud Detection</h2>
+
+                            <h6 class="mt-5">Your safety matters. If you've fallen victim to fraud, don't hesitate to reach out to these trusted organizations for help</h6>
 
                             <p class="mb-3">
-                                <i class="bi-geo-alt me-2"></i>
-                                London, United Kingdom
+                                Computer Emergency Response Team of Mauritius (CERT-MU)
                             </p>
-
-                            <p class="mb-2">
-                                <a href="tel: 010-020-0340" class="contact-link">
-                                    010-020-0340
-                                </a>
-                            </p>
-
-                            <p>
-                                <a href="mailto:info@company.com" class="contact-link">
-                                    info@company.com
-                                </a>
-                            </p>
-
-                            <h6 class="site-footer-title mt-5 mb-3">Social</h6>
-
-                            <ul class="social-icon mb-4">
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-instagram"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-twitter"></a>
-                                </li>
-                                
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-facebook"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                </li>
-                            </ul>
 
                         
 
+                            <p class="cont">
+                                Tel: 800 2378  |  Email: incident@cert.govmu.org
+                            </p>
 
-                            <p class="copyright-text">Copyright © 2048 ebook company
-                            <br><br><a rel="nofollow" href="https://templatemo.com" target="_blank">designed by templatemo</a></p>
+                            <p class="mb-3">
+                                Cybercrime Unit (The Mauritius Police Force)
+                            </p>
+
+                            <p class="cont">
+                                Tel: 211 9114  |  Email: ccu.mpf@govmu.org
+                            </p>
+
+                            <p class="mb-3">
+                                Data Protection Office
+                            </p>
+
+                            <p class="cont">
+                                Tel: 460 0251  |  Email: dpo@govmu.org
+                            </p>
+
+                            <p class="mb-3">
+                                Information and Communication Technologies Authority (ICTA)
+                            </p>
+
+                            <p class="cont">
+                                Tel: 211 5333  |  Email: info@icta.mu
+                            </p>
+
+                    
                         </div>
 
                     </div>

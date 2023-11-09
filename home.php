@@ -102,6 +102,21 @@
     </style>
 </head>
 <body>
+
+        <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "Fibkt4bxRnVTgZYguEMkn",
+            domain: "www.chatbase.co"
+            }
+            </script>
+            <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="Fibkt4bxRnVTgZYguEMkn"
+            domain="www.chatbase.co"
+            defer>
+        </script>
+
+    <?php include 'navbar.php';?>
     <div class="container">
         <div class="column1">
             <img src="homeimage.png" alt="Image description">
