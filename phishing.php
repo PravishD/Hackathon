@@ -22,8 +22,10 @@
     <div id="section">
       <h2>Phishing</h2>
 
+      <p>Phishing is a deceptive online tactic where cybercriminals impersonate trustworthy sources, such as banks or friends, to trick individuals into revealing their personal information. This often occurs through fake emails or websites that prompt users to enter sensitive details like passwords or credit card numbers, allowing the attackers to steal their data. It's important to be cautious and verify the authenticity of any unexpected online requests to avoid falling victim to phishing scams.</p>
+
       <div class="ratio ratio-16x9" id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/kDFeSUUwRnA?si=i3kvDXd-mQCqQh1V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BnmneAjVrM4?si=8jg5chIru8jsmLdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       
       <div class="container">
@@ -64,16 +66,9 @@
         <button type="button" class="button" >Next</button> 
       </a>
     
-    
-    
-    
+  
     </div>
 
-    
- 
-
-
-    
     <div id="footer">
       &copy; 2023.
     </div>

@@ -4,6 +4,10 @@ body{
     background-color: rgba(98, 200, 218, 0.151)
 }
 
+p{
+    font-size: 8px;
+}
+
 
 
 .ratio {
@@ -59,19 +63,19 @@ li a {
     color: #FFFFFF;
     padding: 8px 0 8px 16px;
     text-decoration: none;
-  }
+}
   
-  li a:visited {
-      background-color: #4CAF50;
-      color: #FFFFFF;
-  }
+li a:visited {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+}
   
-  li a:hover {
-      background-color: #786ED4;
-      color: #000000;
-  }
+li a:hover {
+    background-color: #786ED4;
+    color: #000000;
+}
 
-  ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
