@@ -1,18 +1,18 @@
 const questions = [
     {
-        question: "Pop-up ad scams often contain fake offers, misleading information, or malicious links that can lead to scams, fraud, or malware infections.",
+        question: "In an online dating scam, someone pretends to be interested in a romantic relationship through a dating website or app with the genuine intention of building a meaningful connection.",
         answers:[
             {
-                text:"True",correct:true
+                text:"True",correct:false
             },
             {
-                text:"False",correct:false
+                text:"False",correct:true
             }
         ]
     },
 
     {
-        question: " Clicking on pop-up ads, especially if they offer deals that seem too good to be true, is a safe practice that can enhance your online experience.",
+        question: "  Sending money to someone you've only met online is a recommended practice, especially if their story appears sad or urgent.",
         answers:[
             {text:"True",correct:false},
             {text:"False",correct:true}
@@ -20,10 +20,10 @@ const questions = [
     },
 
     {
-        question: "  Using ad-blocking browser extensions or apps is one of the recommended tips to avoid and prevent pop-up ad scams while browsing the internet.",
+        question: "  If someone you're talking to online refuses to video chat or meet in person, it is considered a green flag, indicating their commitment to privacy and security.",
         answers:[
-            {text:"True",correct:true},
-            {text:"False",correct:false}
+            {text:"True",correct:false},
+            {text:"False",correct:true}
         ]
     }
 ];

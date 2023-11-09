@@ -49,7 +49,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Popup ads scams</a>
+                } ?> href="/hackathon/quiz/popupadsquiz.php">Popup ads scams</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "online dating") {
@@ -57,7 +57,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Online dating scams</a>
+                } ?> href="/hackathon/quiz/onlinedating.php">Online dating scams</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "repair scams") {
