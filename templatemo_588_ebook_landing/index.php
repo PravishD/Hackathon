@@ -75,7 +75,7 @@ https://templatemo.com/tm-588-ebook-landing
         <main>
 
        
-
+        
 
             <section>
                 <div class="container">
@@ -85,6 +85,9 @@ https://templatemo.com/tm-588-ebook-landing
                            
                             <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
                                 <nav class="nav nav-pills flex-column">
+
+                                    <h5>Types of Online Frauds</h5>
+
                                     <a class="nav-link smoothscroll" href="#item-1"><strong>Phishing</strong></a>
 
                                     <a class="nav-link smoothscroll" href="#item-2"><strong>Identity Theft</strong></a>
@@ -368,79 +371,7 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
                 </div>
             </section>
             
-            <section class="reviews-section section-padding" id="section_4">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-12 text-center mb-5">
-                            <h6>Confessions</h6>
-
-                            <h2>What people saying...</h2>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <div class="custom-block d-flex flex-wrap">
-                                <div class="custom-block-image-wrap d-flex flex-column">
-                                    <img src="images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg" class="img-fluid avatar-image" alt="">
-
-                                    <div class="text-center mt-3">
-                                        <span class="text-white">Sandy</span>
-
-                                        <strong class="d-block text-white">Artist</strong>
-                                    </div>
-                                </div>
-
-                                <div class="custom-block-info">
-                                    
-
-                                    <p class="mb-0">I fell for an online lottery scam, losing thousands, believing I had won a prize that never existed.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12 my-5 my-lg-0">
-                            <div class="custom-block d-flex flex-wrap">
-                                <div class="custom-block-image-wrap d-flex flex-column">
-                                    <img src="images/avatar/portrait-young-redhead-bearded-male.jpg" class="img-fluid avatar-image avatar-image-left" alt="">
-
-                                    <div class="text-center mt-3">
-                                        <span class="text-white">John</span>
-
-                                        <strong class="d-block text-white">Producer</strong>
-                                    </div>
-                                </div>
-
-                                <div class="custom-block-info">
-                                    
-
-                                    <p class="mb-0">I shared my credit card details in an 'urgent' email, only realizing it was a phishing scam after unauthorized transactions drained my account.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12">
-                            <div class="custom-block d-flex flex-wrap">
-                                <div class="custom-block-image-wrap d-flex flex-column">
-                                    <img src="images/avatar/pretty-blonde-woman.jpg" class="img-fluid avatar-image" alt="">
-
-                                    <div class="text-center mt-3">
-                                        <span class="text-white">Candy</span>
-
-                                        <strong class="d-block text-white">VP, Design</strong>
-                                    </div>
-                                </div>
-
-                                <div class="custom-block-info">
-                                    >
-
-                                    <p class="mb-0"></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+            
 
 
             <section class="contact-section section-padding" id="section_5">
@@ -457,8 +388,8 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
 
                         <div class="col-lg-6 col-12">
                             
-
-                            <h2 class="mb-4">Online Fraud Detection</h2>
+                                    
+                            <h2 class="mb-4"  >Emergency Contacts</h2>
 
                             <h6 class="mt-5">Your safety matters. If you've fallen victim to fraud, don't hesitate to reach out to these trusted organizations for help</h6>
 

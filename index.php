@@ -116,7 +116,8 @@
             defer>
         </script>
 
-    <?php include 'navbar.php';?>
+    <?php include 'C:\xampp\htdocs\Hackathon\navbar.php';?>
+    
     <div class="container">
         <div class="column1">
             <img src="homeimage.png" alt="Image description">

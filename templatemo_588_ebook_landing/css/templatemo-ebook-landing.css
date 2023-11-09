@@ -11,7 +11,7 @@ https://templatemo.com/tm-588-ebook-landing
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #1748C2;
+  --primary-color:                #E4A629;
   --secondary-color:              #7DADFF ;
   --section-bg-color:             #f0f8ff;
   --custom-btn-bg-color:          #7DADFF;
@@ -90,6 +90,9 @@ h4 {
 
 h5 {
   font-size: var(--h5-font-size);
+  padding: 6px ;
+  color: var(--primary-color);
+
 }
 
 h6 {
@@ -135,6 +138,7 @@ strong {
   SECTION               
 -----------------------------------------*/
 .section-padding {
+  margin-top: 35px;
   padding-top: 100px;
   padding-bottom: 100px;
 }

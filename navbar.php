@@ -36,34 +36,29 @@
                     Common Online Frauds
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="templatemo_588_ebook_landing\index.php">Phishing</a>
-                    <a class="dropdown-item" href="templatemo_588_ebook_landing\index.php">Identify Theft</a>
-                    <a class="dropdown-item" href="templatemo_588_ebook_landing\index.php">Online Shopping</a>
-                    <a class="dropdown-item" href="templatemo_588_ebook_landing\index.php">Phone Frauds</a>
-                    <a class="dropdown-item" href="templatemo_588_ebook_landing\index.php">Messaging Scams</a>
-                    <a class="dropdown-item" href="templatemo_588_ebook_landing\index.php">Online Dating Scams</a>
-                    <a class="dropdown-item" href="templatemo_588_ebook_landing\index.php">Job Offer Scam</a>
-                    <a class="dropdown-item" href="templatemo_588_ebook_landing\index.php">Repair Scam</a>
+                    <a class="dropdown-item" href="templatemo_588_ebook_landing\#item-1">Phishing</a>
+                    <a class="dropdown-item" href="templatemo_588_ebook_landing\#item-2">Identify Theft</a>
+                    <a class="dropdown-item" href="templatemo_588_ebook_landing\#item-3">Online Shopping</a>
+                    <a class="dropdown-item" href="templatemo_588_ebook_landing\#item-4">Phone Frauds</a>
+                    <a class="dropdown-item" href="templatemo_588_ebook_landing\#item-5">Messaging Scams</a>
+                    <a class="dropdown-item" href="templatemo_588_ebook_landing\#item-6">Online Dating Scams</a>
+                    <a class="dropdown-item" href="templatemo_588_ebook_landing\#item-7">Job Offer Scam</a>
+                    <a class="dropdown-item" href="templatemo_588_ebook_landing\#item-8">Repair Scam</a>
 
 
                 </div>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Quiz
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Quiz 1</a>
-                    <a class="dropdown-item" href="#">Quiz 2</a>
-                    <a class="dropdown-item" href="#">Quiz 3</a>
-                    <a class="dropdown-item" href="#">Quiz 4</a>
-                    <a class="dropdown-item" href="#">Quiz 5</a>
-                    <a class="dropdown-item" href="#">Quiz 6</a>
-                </div>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="forum\forum.php">Forum</a>
             </li>
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="templatemo_588_ebook_landing\#section_5">Emergency Contacts</a>
+            </li>
+
+
             
             
           </ul>
