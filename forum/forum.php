@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Stylish Forum</title>
+    <title>Simple Forum</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                $("form").on("submit",function(){
+                    //alert($("#comment").val());
+                    $.ajax({
+                        url:"commentAjax.php",
+                        method:"POST",
+                        data:{
+                            txt_comment:$("#comment").val()
+                        },
+                        success: function(data) {
+                // Append the new comment to the comment section
+                $(".comment-section").append(data);
+
+                // Clear the form field after submitting a comment
+                $("#comment").val('');
+            },
+            error: function() {
+                alert("Error processing comment");
+            }
+
+                    });
+                    //alert ("sent");
+                });
+            }
+        );
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
+
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 10px;
             text-align: center;
         }
-        .container {
+
+        main {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
@@ -28,79 +57,81 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            font-size: 32px;
+
+        .comment-section {
+            margin-top: 20px;
         }
-        .topic {
-            background-color: #f8f8f8;
-            padding: 20px;
-            margin: 20px 0;
+
+        .comment {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
             border-radius: 5px;
-        }
-        h3 {
-            font-size: 24px;
-        }
-        p {
-            font-size: 16px;
-        }
-        .post {
             background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
         }
-        .post h4 {
-            font-size: 18px;
-            color: #0074D9;
+
+        form {
+            margin-top: 20px;
         }
-        .reply-button {
-            background-color: #0074D9;
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #333;
             color: #fff;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border: none;
-            border-radius: 5px;
+            border-radius: 3px;
             cursor: pointer;
-            font-size: 16px;
-            margin-top: 10px;
-            transition: background-color 0.2s;
-        }
-        .reply-button:hover {
-            background-color: #0056a2;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Stylish Forum</h1>
+        <h1>Simple Forum</h1>
     </header>
 
-    <div class="container">
-        <h2>Welcome to the Forum</h2>
-        <div class="topic">
-            <h3>Topic 1</h3>
-            <p>This is the first topic in the forum.</p>
-            <div class="post">
-                <h4>User 1</h4>
-                <p>This is the first post in Topic 1.</p>
-                <button class="reply-button">Reply</button>
-            </div>
-            <div class="post">
-                <h4>User 2</h4>
-                <p>This is the second post in Topic 1.</p>
-                <button class="reply-button">Reply</button>
-            </div>
+    <main>
+        <div class="comment-section">
+            <?php 
+            require_once "../backend/db_connect.php";
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $commentQuery = "SELECT message_submitted
+                                FROM comment_tbl
+                                WHERE flag = '0'
+                ";
+                $result = $conn->query($commentQuery);
+                while ($value = $result->fetch()) { 
+                    echo '<div class="comment">
+                    <p>'.$value['message_submitted'].'</p>
+                    </div>';
+                }
+            ?>
+            <!-- Add more comments as needed -->
         </div>
-        <div class="topic">
-            <h3>Topic 2</h3>
-            <p>This is the second topic in the forum.</p>
-            <div class="post">
-                <h4>User 3</h4>
-                <p>This is the first post in Topic 2.</p>
-                <button class="reply-button">Reply</button>
-            </div>
-        </div>
-        <!-- You can add more topics and posts here -->
-    </div>
+
+        <form method='post' action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+            <label for="comment">Your Comment:</label>
+            <textarea id="comment" name="txt_comment" rows="4" required></textarea>
+            <button type="submit">Submit Comment</button>
+        </form>
+    </main>
+
+
 </body>
+
 </html>
