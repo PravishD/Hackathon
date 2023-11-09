@@ -19,14 +19,7 @@
                   echo "class='nav-link'";
                 } ?> href="/hackathon/quiz/phishingquiz.php">Phishing scams</a>
           </li>
-          <li class="nav-item">
-            <a <?php if ($active == "identity theft") {
-                  echo "class='nav-link active'";
-                  echo 'aria-current="page"';
-                } else {
-                  echo "class='nav-link'";
-                } ?> href="/hackathon/quiz/identitytheftquiz.php">Identity theft</a>
-          </li>
+          
           <li class="nav-item">
             <a <?php if ($active == "online shopping") {
                   echo "class='nav-link active'";
@@ -43,14 +36,7 @@
                   echo "class='nav-link'";
                 } ?> href="/hackathon/quiz/phonefraudquiz.php">Phone frauds</a>
           </li>
-          <li class="nav-item">
-            <a <?php if ($active == "popup ads") {
-                  echo "class='nav-link active'";
-                  echo 'aria-current="page"';
-                } else {
-                  echo "class='nav-link'";
-                } ?> href="/hackathon/quiz/popupadsquiz.php">Popup ads scams</a>
-          </li>
+         
           <li class="nav-item">
             <a <?php if ($active == "online dating") {
                   echo "class='nav-link active'";
@@ -75,14 +61,7 @@
                   echo "class='nav-link'";
                 } ?> href="/hackathon/quiz/messagingscamquiz.php">Messaging scams</a>
           </li>
-          <li class="nav-item">
-            <a <?php if ($active == "fake websites") {
-                  echo "class='nav-link active'";
-                  echo 'aria-current="page"';
-                } else {
-                  echo "class='nav-link'";
-                } ?> href="/hackathon/quiz/fakewebsitequiz.php">Fake websites</a>
-          </li>
+          
           <li class="nav-item">
             <a <?php if ($active == "job offer") {
                   echo "class='nav-link active'";
@@ -90,6 +69,15 @@
                 } else {
                   echo "class='nav-link'";
                 } ?> href="/hackathon/quiz/jobOfferQuiz.php">Job offer scams</a>
+          </li>
+
+          <li class="nav-item">
+            <a <?php if ($active == "identity theft") {
+                  echo "class='nav-link active'";
+                  echo 'aria-current="page"';
+                } else {
+                  echo "class='nav-link'";
+                } ?> href="/hackathon/quiz/identitytheftquiz.php">Identity theft</a>
           </li>
         </ul>
 
