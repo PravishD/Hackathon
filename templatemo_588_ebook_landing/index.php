@@ -39,17 +39,17 @@
             }
 
             .modal-content {
-                background-color: #fefefe;
+                background-color:white;
                 margin: 50px auto; /* Updated margin property */
                 padding: 20px;
                 border: 1px solid #888;
-                width: 80%;
+                width: 65%;
             }
 
             .close {
                 color: #aaa;
                 float: right;
-                font-size: 28px;
+                font-size: 30px;
                 font-weight: bold;
             }
 
