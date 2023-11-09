@@ -103,7 +103,7 @@
 </head>
 
 <body>
-    <?php include 'C:\xampp\htdocs\Hackathon\navbar.php';?>
+    <?php include '..\navbar_folder.php';?>
     <header>
         <h1>Forum</h1>
     </header>
