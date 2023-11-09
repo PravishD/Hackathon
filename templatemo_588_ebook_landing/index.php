@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>ebook landing page template</title>
+        <title>Online Fraud Sensitisation</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +33,19 @@ https://templatemo.com/tm-588-ebook-landing
     <body>
 
         <main>
+
+        <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "Fibkt4bxRnVTgZYguEMkn",
+            domain: "www.chatbase.co"
+            }
+            </script>
+            <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="Fibkt4bxRnVTgZYguEMkn"
+            domain="www.chatbase.co"
+            defer>
+        </script>
 
 
             <section>
@@ -82,8 +95,12 @@ https://templatemo.com/tm-588-ebook-landing
                                         </a>
                                         
                                         <a href="destination-page.html">
+                                           
                                             <button type="button" class="button">Take Quiz</button>  
                                         </a>
+
+                                       
+
 
                                         <a href="#item-2">
                                             <button type="button" class="button">Next</button>  
@@ -304,7 +321,7 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
                     <div class="row">
 
                         <div class="col-lg-12 col-12 text-center mb-5">
-                            <h6>Reviews</h6>
+                            <h6>Confessions</h6>
 
                             <h2>What people saying...</h2>
                         </div>
@@ -322,17 +339,9 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
                                 </div>
 
                                 <div class="custom-block-info">
-                                    <div class="reviews-group mb-3">
-                                        <strong>4.5</strong>
+                                    
 
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star"></i>
-                                    </div>
-
-                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p class="mb-0">I fell for an online lottery scam, losing thousands, believing I had won a prize that never existed.</p>
                                 </div>
                             </div>
                         </div>
@@ -350,17 +359,9 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
                                 </div>
 
                                 <div class="custom-block-info">
-                                    <div class="reviews-group mb-3">
-                                        <strong>3.5</strong>
+                                    
 
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star"></i>
-                                        <i class="bi-star"></i>
-                                    </div>
-
-                                    <p class="mb-0">If you need some specific CSS templates, you can Google with keywords such as templatemo one-page, templatemo portfolio, etc.</p>
+                                    <p class="mb-0">I shared my credit card details in an 'urgent' email, only realizing it was a phishing scam after unauthorized transactions drained my account.</p>
                                 </div>
                             </div>
                         </div>
@@ -378,17 +379,9 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
                                 </div>
 
                                 <div class="custom-block-info">
-                                    <div class="reviews-group mb-3">
-                                        <strong>5</strong>
+                                    >
 
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                        <i class="bi-star-fill"></i>
-                                    </div>
-
-                                    <p class="mb-0">Please tell your friends about our website that we provide 100% free CSS templates for everyone. Thank you for using our templates.</p>
+                                    <p class="mb-0"></p>
                                 </div>
                             </div>
                         </div>
@@ -403,31 +396,9 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
                     <div class="row">
 
                         <div class="col-lg-5 col-12 mx-auto">
-                            <form class="custom-form ebook-download-form bg-white shadow" action="#" method="post" role="form">
-                                <div class="text-center mb-5">
-                                    <h2 class="mb-1">Get your free ebook</h2>
-                                </div>
-
+                        <form class="custom-form ebook-download-form bg-white shadow" action="#" method="post" role="form">
                                 <div class="ebook-download-form-body">
-                                    <div class="input-group mb-4">
-                                        <input type="text" name="ebook-form-name" id="ebook-form-name" class="form-control" aria-label="ebook-form-name" aria-describedby="basic-addon1" placeholder="Your Name" required>
-
-                                        <span class="input-group-text" id="basic-addon1">
-                                            <i class="custom-form-icon bi-person"></i>
-                                        </span>
-                                    </div>
-
-                                    <div class="input-group mb-4">
-                                        <input type="email" name="ebook-email" id="ebook-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@company.com" aria-label="ebook-form-email" aria-describedby="basic-addon2" required="">
-
-                                        <span class="input-group-text" id="basic-addon2">
-                                            <i class="custom-form-icon bi-envelope"></i>
-                                        </span>
-                                    </div>
-
-                                    <div class="col-lg-8 col-md-10 col-8 mx-auto">
-                                        <button type="submit" class="form-control">Download ebook</button>
-                                    </div>
+                                    <img src="fotterimage.png" alt="">
                                 </div>
                             </form>
                         </div>
@@ -473,6 +444,9 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
                                     <a href="#" class="social-icon-link bi-whatsapp"></a>
                                 </li>
                             </ul>
+
+                        
+
 
                             <p class="copyright-text">Copyright © 2048 ebook company
                             <br><br><a rel="nofollow" href="https://templatemo.com" target="_blank">designed by templatemo</a></p>
