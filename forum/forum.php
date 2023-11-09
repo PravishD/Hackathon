@@ -105,7 +105,6 @@
 <body>
     <header>
         <h1>Forum</h1>
-        <?php include('') ?>
     </header>
 
     <main>
