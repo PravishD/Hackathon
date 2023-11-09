@@ -11,10 +11,10 @@ https://templatemo.com/tm-588-ebook-landing
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #E76F51;
-  --secondary-color:              #E9C46A;
+  --primary-color:                #1748C2;
+  --secondary-color:              #7DADFF ;
   --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #F4A261;
+  --custom-btn-bg-color:          #7DADFF;
   --custom-btn-bg-hover-color:    #E76F51;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -801,7 +801,7 @@ strong {
   CONTACT               
 -----------------------------------------*/
 .contact-section {
-  background: var(--custom-btn-bg-color);
+  background: #3e7ff0;
   position: relative;
   overflow: hidden;
 }
@@ -819,13 +819,30 @@ strong {
   pointer-events: none;
 }
 
+
 .contact-section .container {
   position: relative;
 }
 
 .contact-section p {
-  color: var(--white-color);
-  font-size: var(--h6-font-size);
+  color: #000F62;
+  font-size: 16px;
+  font-weight:500;
+}
+
+p.cont {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+h2.mb-4{
+  color: #000F62;
+}
+
+h6{
+  color: #E4A629;
 }
 
 .contact-link {
@@ -916,7 +933,7 @@ strong {
 .button{
   padding: 15px;
     padding-block: 14px;
-  background-color: rgb(231,111,81);
+  background-color: #E4A629;
   border: none;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
@@ -925,6 +942,8 @@ strong {
   transition: all 0.3s;
   margin-bottom: 0;
 }
+
+
 
 .custom-form button[type="submit"]:hover,
 .custom-form button[type="submit"]:focus {

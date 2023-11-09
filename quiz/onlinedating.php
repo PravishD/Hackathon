@@ -9,16 +9,10 @@
 </head>
 
 <body>
-  <!--import the navigation bar and set phising as active-->
-  <?php
-  $active = "online dating";
-  include("quiz_navbar.php");
-  ?>
-
-
+  
   <!--Phone Fraud Scam quiz starts here-->
   <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <div class="card" style="width: 30rem;">
+    <div class="card" style="width: 40rem;">
       <div class="card-body">
         <h5 class="card-title">Online Dating Scam Quiz</h5><br>
         <h6 class="card-subtitle mb-2 text-body-secondary">Question:</h6>
