@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Stylish Forum</title>
     <style>
         body {
@@ -71,6 +74,7 @@
     <header>
         <h1>Stylish Forum</h1>
     </header>
+
     <div class="container">
         <h2>Welcome to the Forum</h2>
         <div class="topic">
