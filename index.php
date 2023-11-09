@@ -3,6 +3,8 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
 
     <style>
         body{
@@ -102,7 +104,7 @@
     </style>
 </head>
 <body>
-
+        
         <script>
             window.embeddedChatbotConfig = {
             chatbotId: "Fibkt4bxRnVTgZYguEMkn",
@@ -117,6 +119,13 @@
         </script>
 
     <?php include 'C:\xampp\htdocs\Hackathon\navbar.php';?>
+
+    <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <!-- You can add more bubbles here -->
+    </div>
     
     <div class="container">
         <div class="column1">

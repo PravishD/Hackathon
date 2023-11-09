@@ -73,9 +73,8 @@ https://templatemo.com/tm-588-ebook-landing
     <body>
 
         <main>
-
-       
-    
+            
+        
 
             <section>
                 <div class="container">
@@ -374,65 +373,7 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
             
 
 
-            <section class="contact-section section-padding" id="section_5">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-5 col-12 mx-auto">
-                        <form class="custom-form ebook-download-form bg-white shadow" action="#" method="post" role="form">
-                                <div class="ebook-download-form-body">
-                                    <img src="..\fotterimage.png" alt="">
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            
-                                    
-                            <h2 class="mb-4"  >Emergency Contacts</h2>
-
-                            <h6 class="mt-5">Your safety matters. If you've fallen victim to fraud, don't hesitate to reach out to these trusted organizations for help</h6>
-
-                            <p class="mb-3">
-                                Computer Emergency Response Team of Mauritius (CERT-MU)
-                            </p>
-
-                        
-
-                            <p class="cont">
-                                Tel: 800 2378  |  Email: incident@cert.govmu.org
-                            </p>
-
-                            <p class="mb-3">
-                                Cybercrime Unit (The Mauritius Police Force)
-                            </p>
-
-                            <p class="cont">
-                                Tel: 211 9114  |  Email: ccu.mpf@govmu.org
-                            </p>
-
-                            <p class="mb-3">
-                                Data Protection Office
-                            </p>
-
-                            <p class="cont">
-                                Tel: 460 0251  |  Email: dpo@govmu.org
-                            </p>
-
-                            <p class="mb-3">
-                                Information and Communication Technologies Authority (ICTA)
-                            </p>
-
-                            <p class="cont">
-                                Tel: 211 5333  |  Email: info@icta.mu
-                            </p>
-
-                    
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+           
         </main>
 
         <!-- JAVASCRIPT FILES -->
