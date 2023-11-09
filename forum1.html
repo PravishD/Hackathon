@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Forum with Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        .forum-post {
+            background-color: white;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .like-btn, .dislike-btn, .report-btn, .reply-btn, .close-btn {
+            cursor: pointer;
+            margin-right: 10px;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .like-counter, .dislike-counter {
+            margin-right: 10px;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 2;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .reply-container {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enhanced Forum with Bootstrap</h1>
+    </header>
+
+    <section class="container">
+        <div id="posts-container"></div>
+
+        <form id="post-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" required></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitPost()">Submit Post</button>
+        </form>
+    </section>
+
+    <div class="popup" id="report-popup">
+        <label for="report-type">Select Report Type:</label>
+        <select class="form-control" id="report-type">
+            <option value="spam">Spam</option>
+            <option value="inappropriate">Inappropriate Content</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <label for="report-message">Write a message:</label>
+        <textarea class="form-control" id="report-message"></textarea>
+        <br>
+        <button class="btn btn-danger" onclick="submitReport()">Submit Report</button>
+        <button class="btn btn-secondary close-btn" onclick="closeReportPopup()">Close</button>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function submitPost() {
+            const username = document.getElementById('username').value;
+            const message = document.getElementById('message').value;
+
+            if (username && message) {
+                const postsContainer = document.getElementById('posts-container');
+
+                const postDiv = document.createElement('div');
+                postDiv.classList.add('forum-post', 'container');
+
+                const postHeader = document.createElement('h3');
+                postHeader.textContent = username;
+
+                const postMessage = document.createElement('p');
+                postMessage.textContent = message;
+
+                const likeBtn = document.createElement('button');
+                likeBtn.classList.add('btn', 'btn-success', 'like-btn');
+                likeBtn.textContent = 'Like';
+                likeBtn.onclick = function() {
+                    toggleLike(likeBtn, dislikeBtn);
+                };
+
+                const likeCounter = document.createElement('span');
+                likeCounter.classList.add('like-counter');
+                likeCounter.textContent = '0';
+
+                const dislikeBtn = document.createElement('button');
+                dislikeBtn.classList.add('btn', 'btn-danger', 'dislike-btn');
+                dislikeBtn.textContent = 'Dislike';
+                dislikeBtn.onclick = function() {
+                    toggleDislike(dislikeBtn, likeBtn);
+                };
+
+                const dislikeCounter = document.createElement('span');
+                dislikeCounter.classList.add('dislike-counter');
+                dislikeCounter.textContent = '0';
+
+                const replyBtn = document.createElement('button');
+                replyBtn.classList.add('btn', 'btn-info', 'reply-btn');
+                replyBtn.textContent = 'Reply';
+                replyBtn.onclick = function() {
+                    showReplyForm(postDiv);
+                };
+
+                const reportBtn = document.createElement('button');
+                reportBtn.classList.add('btn', 'btn-secondary', 'report-btn');
+                reportBtn.textContent = 'Report';
+                reportBtn.onclick = function() {
+                    showReportPopup();
+                };
+
+                postDiv.appendChild(postHeader);
+                postDiv.appendChild(postMessage);
+                postDiv.appendChild(likeBtn);
+                postDiv.appendChild(likeCounter);
+                postDiv.appendChild(dislikeBtn);
+                postDiv.appendChild(dislikeCounter);
+                postDiv.appendChild(replyBtn);
+                postDiv.appendChild(reportBtn);
+
+                postsContainer.appendChild(postDiv);
+
+                // Clear the form
+                document.getElementById('username').value = '';
+                document.getElementById('message').value = '';
+            }
+        }
+
+        function toggleLike(likeBtn, dislikeBtn) {
+            const likeCounter = likeBtn.nextSibling;
+            const dislikeCounter = dislikeBtn.nextSibling;
+
+            if (likeBtn.textContent === 'Like') {
+                likeBtn.textContent = 'Unlike';
+                likeCounter.textContent = parseInt(likeCounter.textContent) + 1;
+
+                // Ensure dislike button is in the default state
+                dislikeBtn.textContent = 'Dislike';
+                dislikeCounter.textContent = parseInt(dislikeCounter.textContent) - 1;
+            } else {
+                likeBtn.textContent = 'Like';
+                likeCounter.textContent = parseInt(likeCounter.textContent) - 1;
+            }
+        }
+
+        function toggleDislike(dislikeBtn, likeBtn) {
+            const dislikeCounter = dislikeBtn.nextSibling;
+            const likeCounter = likeBtn.nextSibling;
+
+            if (dislikeBtn.textContent === 'Dislike') {
+                dislikeBtn.textContent = 'Undislike';
+                dislikeCounter.textContent = parseInt(dislikeCounter.textContent) + 1;
+
+                // Ensure like button is in the default state
+                likeBtn.textContent = 'Like';
+                likeCounter.textContent = parseInt(likeCounter.textContent) - 1;
+            } else {
+                dislikeBtn.textContent = 'Dislike';
+                dislikeCounter.textContent = parseInt(dislikeCounter.textContent) - 1;
+            }
+        }
+
+        function showReportPopup() {
+            const reportPopup = document.getElementById('report-popup');
+            const overlay = document.getElementById('overlay');
+
+            reportPopup.style.display = 'block';
+            overlay.style.display = 'block';
+        }
+
+        function submitReport() {
+            const reportType = document.getElementById('report-type').value;
+            const reportMessage = document.getElementById('report-message').value;
+
+            // You can handle the report data as needed, e.g., send it to the server.
+
+            // Clear the report message
+            document.getElementById('report-message').value = '';
+
+            // Close the popup and overlay
+            closeReportPopup();
+        }
+
+        function closeReportPopup() {
+            const reportPopup = document.getElementById('report-popup');
+            const overlay = document.getElementById('overlay');
+
+            reportPopup.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+
+        function showReplyForm(parentDiv) {
+            const replyContainer = document.createElement('div');
+            replyContainer.classList.add('reply-container', 'container');
+
+            const replyForm = document.createElement('form');
+
+            const usernameInput = document.createElement('div');
+            usernameInput.classList.add('form-group');
+            usernameInput.innerHTML = '<label for="reply-username">Username:</label>' +
+                '<input type="text" class="form-control" id="reply-username" required>';
+
+            const messageInput = document.createElement('div');
+            messageInput.classList.add('form-group');
+            messageInput.innerHTML = '<label for="reply-message">Message:</label>' +
+                '<textarea class="form-control" id="reply-message" required></textarea>';
+
+            const submitBtn = document.createElement('button');
+            submitBtn.classList.add('btn', 'btn-primary');
+            submitBtn.type = 'button';
+            submitBtn.textContent = 'Submit Reply';
+            submitBtn.onclick = function() {
+                submitReply(parentDiv, replyContainer);
+            };
+
+            replyForm.appendChild(usernameInput);
+            replyForm.appendChild(messageInput);
+            replyForm.appendChild(submitBtn);
+
+            replyContainer.appendChild(replyForm);
+            parentDiv.appendChild(replyContainer);
+        }
+
+        function submitReply(parentDiv, replyContainer) {
+            const username = document.getElementById('reply-username').value;
+            const message = document.getElementById('reply-message').value;
+
+            if (username && message) {
+                const replyDiv = document.createElement('div');
+                replyDiv.classList.add('forum-post', 'container', 'reply-container');
+
+                const replyHeader = document.createElement('h4');
+                replyHeader.textContent = username + ' (Reply)';
+
+                const replyMessage = document.createElement('p');
+                replyMessage.textContent = message;
+
+                replyDiv.appendChild(replyHeader);
+                replyDiv.appendChild(replyMessage);
+
+                parentDiv.appendChild(replyDiv);
+
+                // Clear the reply form
+                document.getElementById('reply-username').value = '';
+                document.getElementById('reply-message').value = '';
+
+                // Remove the reply form container
+                parentDiv.removeChild(replyContainer);
+            }
+        }
+    </script>
+</body>
+</html>

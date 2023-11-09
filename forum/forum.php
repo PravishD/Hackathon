@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Forum</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(
@@ -101,8 +103,9 @@
 </head>
 
 <body>
+    <?php include 'C:\xampp\htdocs\Hackathon\navbar.php';?>
     <header>
-        <h1>Simple Forum</h1>
+        <h1>Forum</h1>
     </header>
 
     <main>
@@ -123,15 +126,33 @@
             ?>
             <!-- Add more comments as needed -->
         </div>
+        
+        <div class="form-floating">
+            <form method='post' action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+                <label for="comment">Your Comment:</label>
 
-        <form method='post' action="<?php echo $_SERVER["PHP_SELF"]; ?>">
-            <label for="comment">Your Comment:</label>
-            <textarea id="comment" name="txt_comment" rows="4" required></textarea>
-            <button type="submit">Submit Comment</button>
-        </form>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Phishing</option>
+                    <option value="2">Identity Theft</option>
+                    <option value="3">Online Shopping</option>
+                    <option value="1">Phone Frauds</option>
+                    <option value="2">Messaging Scams</option>
+                    <option value="3">Online Dating Scams</option>
+                    <option value="1">Job Offer Scams</option>
+                    <option value="2">Repair Scams</option>
+                </select>
+
+                <textarea id="comment" placeholder="Leave a comment" name="txt_comment" rows="4" required></textarea>
+                <button class="btn-primary" type="submit">Submit Comment</button>
+            </form>
+        </div>
+        
     </main>
 
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </html>
