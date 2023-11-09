@@ -130,6 +130,19 @@
         <div class="form-floating">
             <form method='post' action="<?php echo $_SERVER["PHP_SELF"]; ?>">
                 <label for="comment">Your Comment:</label>
+
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Phishing</option>
+                    <option value="2">Identity Theft</option>
+                    <option value="3">Online Shopping</option>
+                    <option value="1">Phone Frauds</option>
+                    <option value="2">Messaging Scams</option>
+                    <option value="3">Online Dating Scams</option>
+                    <option value="1">Job Offer Scams</option>
+                    <option value="2">Repair Scams</option>
+                </select>
+
                 <textarea id="comment" placeholder="Leave a comment" name="txt_comment" rows="4" required></textarea>
                 <button class="btn-primary" type="submit">Submit Comment</button>
             </form>
