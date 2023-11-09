@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>ebook landing page template</title>
+        <title>Online Fraud Awareness</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +21,46 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/templatemo-ebook-landing.css" rel="stylesheet">
+
+        <style>
+            /* Add your buttonSection styling here */
+
+            /* Styling for the modal */
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .modal-content {
+                background-color: #fefefe;
+                margin: 50px auto; /* Updated margin property */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+            }
+
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>
+
 <!--
 
 TemplateMo 588 ebook landing
@@ -76,20 +116,21 @@ https://templatemo.com/tm-588-ebook-landing
                                     </blockquote>
                                 
                                     
-                                    <div class ="buttonSection">
-                                        <a href="#item-1">
-                                            <button type="button" class="button">Previous</button>  
-                                        </a>
-                                        
-                                        <a href="destination-page.html">
-                                            <button type="button" class="button">Take Quiz</button>  
-                                        </a>
+                                    <div class="buttonSection">
+
+                                        <button type="button" class="button" onclick="openQuizModal1()">Take Quiz</button>
 
                                         <a href="#item-2">
-                                            <button type="button" class="button">Next</button>  
+                                            <button type="button" class="button">Next</button>
                                         </a>
                                     </div>
-                                   
+                                    <div id="quizModal1" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeQuizModal1()">&times;</span>
+                                            <!-- You can load your quiz content here -->
+                                            <iframe src="../quiz/phishingquiz.php" width="100%" height="500px"></iframe>
+                                        </div>
+                                    </div>
                                 
                                 </div>
 
@@ -103,18 +144,23 @@ Identity theft is when someone steals your personal information to pretend they'
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/kDFeSUUwRnA?si=2wWBEx-PIh_gwq0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </blockquote>
                                     
-                                    <div class ="buttonSection">
+                                    <div class="buttonSection">
                                         <a href="#item-1">
-                                            <button type="button" class="button">Previous</button>  
-                                        </a>
-                                        
-                                        <a href="destination-page.html">
-                                            <button type="button" class="button">Take Quiz</button>  
+                                            <button type="button" class="button">Previous</button>
                                         </a>
 
+                                        <button type="button" class="button" onclick="openQuizModal2()">Take Quiz</button>
+
                                         <a href="#item-3">
-                                            <button type="button" class="button">Next</button>  
+                                            <button type="button" class="button">Next</button>
                                         </a>
+                                    </div>
+                                    <div id="quizModal2" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeQuizModal2()">&times;</span>
+                                            <!-- You can load your quiz content here -->
+                                            <iframe src="../quiz/identitytheftquiz.php" width="100%" height="500px"></iframe>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -129,20 +175,24 @@ Scammers create fake online stores with stolen logos and designs, offering low-p
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/qRWpvcjpQNw?si=cYpVkUFHPuCzpP7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </blockquote>
                                     
-                                    <div class ="buttonSection">
+                                    <div class="buttonSection">
                                         <a href="#item-2">
-                                            <button type="button" class="button">Previous</button>  
-                                        </a>
-                                        
-                                        <a href="destination-page.html">
-                                            <button type="button" class="button">Take Quiz</button>  
+                                            <button type="button" class="button">Previous</button>
                                         </a>
 
+                                        <button type="button" class="button" onclick="openQuizModal3()">Take Quiz</button>
+
                                         <a href="#item-4">
-                                            <button type="button" class="button">Next</button>  
+                                            <button type="button" class="button">Next</button>
                                         </a>
                                     </div>
-                                   
+                                    <div id="quizModal3" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeQuizModal3()">&times;</span>
+                                            <!-- You can load your quiz content here -->
+                                            <iframe src="../quiz/onlineshoppingquiz.php" width="100%" height="500px"></iframe>
+                                        </div>
+                                    </div>
                                 
                                 </div>
 
@@ -157,18 +207,23 @@ Scammers create fake online stores with stolen logos and designs, offering low-p
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/OgXHUnRAwiQ?si=dYMRZXdrJQGEv5KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </blockquote>
                                     
-                                    <div class ="buttonSection">
+                                    <div class="buttonSection">
                                         <a href="#item-3">
-                                            <button type="button" class="button">Previous</button>  
-                                        </a>
-                                        
-                                        <a href="destination-page.html">
-                                            <button type="button" class="button">Take Quiz</button>  
+                                            <button type="button" class="button">Previous</button>
                                         </a>
 
+                                        <button type="button" class="button" onclick="openQuizModal4()">Take Quiz</button>
+
                                         <a href="#item-5">
-                                            <button type="button" class="button">Next</button>  
+                                            <button type="button" class="button">Next</button>
                                         </a>
+                                    </div>
+                                    <div id="quizModal4" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeQuizModal4()">&times;</span>
+                                            <!-- You can load your quiz content here -->
+                                            <iframe src="../quiz/phonefraudquiz.php" width="100%" height="500px"></iframe>
+                                        </div>
                                     </div>
                                    
                                 
@@ -188,20 +243,24 @@ Scammers create fake online stores with stolen logos and designs, offering low-p
                                         <iframe width="560" height="315" src="https://www.youtube.com/embed/lLlCc98R0_c?si=ZwZYKRfkU8OPq-6t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </blockquote>
                                     
-                                    <div class ="buttonSection">
+                                    <div class="buttonSection">
                                         <a href="#item-4">
-                                            <button type="button" class="button">Previous</button>  
-                                        </a>
-                                        
-                                        <a href="destination-page.html">
-                                            <button type="button" class="button">Take Quiz</button>  
+                                            <button type="button" class="button">Previous</button>
                                         </a>
 
+                                        <button type="button" class="button" onclick="openQuizModal5()">Take Quiz</button>
+
                                         <a href="#item-6">
-                                            <button type="button" class="button">Next</button>  
+                                            <button type="button" class="button">Next</button>
                                         </a>
                                     </div>
-                                   
+                                    <div id="quizModal5" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeQuizModal5()">&times;</span>
+                                            <!-- You can load your quiz content here -->
+                                            <iframe src="../quiz/messagingscamquiz.php" width="100%" height="500px"></iframe>
+                                        </div>
+                                    </div>
                                 
                                 </div>
                                 
@@ -216,20 +275,24 @@ Scammers create fake online stores with stolen logos and designs, offering low-p
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/dV_IGkk6Fiw?si=lbP1YxN_TIU-Bctc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </blockquote>
                                     
-                                    <div class ="buttonSection">
+                                    <div class="buttonSection">
                                         <a href="#item-5">
-                                            <button type="button" class="button">Previous</button>  
-                                        </a>
-                                        
-                                        <a href="destination-page.html">
-                                            <button type="button" class="button">Take Quiz</button>  
+                                            <button type="button" class="button">Previous</button>
                                         </a>
 
+                                        <button type="button" class="button" onclick="openQuizModal6()">Take Quiz</button>
+
                                         <a href="#item-7">
-                                            <button type="button" class="button">Next</button>  
+                                            <button type="button" class="button">Next</button>
                                         </a>
                                     </div>
-                                   
+                                    <div id="quizModal6" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeQuizModal6()">&times;</span>
+                                            <!-- You can load your quiz content here -->
+                                            <iframe src="../quiz/onlinedating.php" width="100%" height="500px"></iframe>
+                                        </div>
+                                    </div>
                                 
                                 </div>
 
@@ -245,20 +308,24 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/xRKZBIHZoME?si=baXiu9Hf2TS18K4x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </blockquote>
                                     
-                                    <div class ="buttonSection">
+                                    <div class="buttonSection">
                                         <a href="#item-6">
-                                            <button type="button" class="button">Previous</button>  
-                                        </a>
-                                        
-                                        <a href="destination-page.html">
-                                            <button type="button" class="button">Take Quiz</button>  
+                                            <button type="button" class="button">Previous</button>
                                         </a>
 
+                                        <button type="button" class="button" onclick="openQuizModal7()">Take Quiz</button>
+
                                         <a href="#item-8">
-                                            <button type="button" class="button">Next</button>  
+                                            <button type="button" class="button">Next</button>
                                         </a>
                                     </div>
-                                   
+                                    <div id="quizModal7" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeQuizModal7()">&times;</span>
+                                            <!-- You can load your quiz content here -->
+                                            <iframe src="../quiz/jobOfferQuiz.php" width="100%" height="500px"></iframe>
+                                        </div>
+                                    </div>
                                 
                                 </div>
 
@@ -273,16 +340,20 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/g1ZApugPgq0?si=GhXpSxglFpf39Gh9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </blockquote>
                                     
-                                    <div class ="buttonSection">
-                                        <a href="#item-6">
-                                            <button type="button" class="button">Previous</button>  
-                                        </a>
-                                        
-                                        <a href="destination-page.html">
-                                            <button type="button" class="button">Take Quiz</button>  
+                                    <div class="buttonSection">
+                                        <a href="#item-7">
+                                            <button type="button" class="button">Previous</button>
                                         </a>
 
-                                        
+                                        <button type="button" class="button" onclick="openQuizModal8()">Take Quiz</button>
+
+                                    </div>
+                                    <div id="quizModal8" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeQuizModal8()">&times;</span>
+                                            <!-- You can load your quiz content here -->
+                                            <iframe src="../quiz/repairscamquiz.php" width="100%" height="500px"></iframe>
+                                        </div>
                                     </div>
                                    
                                 
@@ -294,11 +365,7 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
                     </div>
                 </div>
             </section>
-
-
-           
-
-
+            
             <section class="reviews-section section-padding" id="section_4">
                 <div class="container">
                     <div class="row">
@@ -489,6 +556,6 @@ An online job offer scam tricks job seekers with fake opportunities, aiming to s
         <script src="js/jquery.sticky.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
-
+        <script src="index.js"></script>                               
     </body>
 </html>
