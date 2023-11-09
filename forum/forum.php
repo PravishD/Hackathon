@@ -75,8 +75,6 @@
         <h1>Stylish Forum</h1>
     </header>
 
-    <?php include '..\nav.php';?>
-
     <div class="container">
         <h2>Welcome to the Forum</h2>
         <div class="topic">
