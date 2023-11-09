@@ -25,7 +25,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Identity theft</a>
+                } ?> href="/hackathon/quiz/identitytheftquiz.php">Identity theft</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "online shopping") {
@@ -33,7 +33,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Online shopping scams</a>
+                } ?> href="/hackathon/quiz/onlineshoppingquiz.php">Online shopping scams</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "phone fraud") {
@@ -41,7 +41,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Phone frauds</a>
+                } ?> href="/hackathon/quiz/phonefraudquiz.php">Phone frauds</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "popup ads") {
