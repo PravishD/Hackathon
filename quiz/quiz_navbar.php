@@ -25,7 +25,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Identity theft</a>
+                } ?> href="/hackathon/quiz/identitytheftquiz.php">Identity theft</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "online shopping") {
@@ -33,7 +33,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Online shopping scams</a>
+                } ?> href="/hackathon/quiz/onlineshoppingquiz.php">Online shopping scams</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "phone fraud") {
@@ -41,7 +41,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Phone frauds</a>
+                } ?> href="/hackathon/quiz/phonefraudquiz.php">Phone frauds</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "popup ads") {
@@ -49,7 +49,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Popup ads scams</a>
+                } ?> href="/hackathon/quiz/popupadsquiz.php">Popup ads scams</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "online dating") {
@@ -57,7 +57,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Online dating scams</a>
+                } ?> href="/hackathon/quiz/onlinedating.php">Online dating scams</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "repair scams") {
@@ -65,7 +65,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Repair scams</a>
+                } ?> href="/hackathon/quiz/repairscamquiz.php">Repair scams</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "messaging scams") {
@@ -73,7 +73,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Messaging scams</a>
+                } ?> href="/hackathon/quiz/messagingscamquiz.php">Messaging scams</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "fake websites") {
@@ -81,7 +81,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Fake websites</a>
+                } ?> href="/hackathon/quiz/fakewebsitequiz.php">Fake websites</a>
           </li>
           <li class="nav-item">
             <a <?php if ($active == "job offer") {
@@ -89,7 +89,7 @@
                   echo 'aria-current="page"';
                 } else {
                   echo "class='nav-link'";
-                } ?> href="#">Job offer scams</a>
+                } ?> href="/hackathon/quiz/jobOfferQuiz.php">Job offer scams</a>
           </li>
         </ul>
 

@@ -11,16 +11,16 @@
 <body>
   <!--import the navigation bar and set phising as active-->
   <?php
-  $active = "phishing";
+  $active = "online shopping";
   include("quiz_navbar.php");
   ?>
 
 
-  <!--Phishing quiz starts here-->
+  <!--Online Shooping Scam quiz starts here-->
   <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
     <div class="card" style="width: 30rem;">
       <div class="card-body">
-        <h5 class="card-title">Phishing Quiz</h5><br>
+        <h5 class="card-title">Online Shopping Scam Quiz</h5><br>
         <h6 class="card-subtitle mb-2 text-body-secondary">Question:</h6>
         <p class="card-text" id="question">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
@@ -36,8 +36,8 @@
     </div>
   </div>
 
-  <!--Phishing quiz ends here-->
-  <script src="phishingquizscript.js"></script>
+  <!--Online Shooping Scam quiz ends here-->
+  <script src="onlineshoppingquiz.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
