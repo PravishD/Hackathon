@@ -40,9 +40,10 @@ https://templatemo.com/tm-588-ebook-landing
                     <div class="row">
 
                         <div class="col-lg-4 col-12">
+                            <button class="btn btn-dark d-lg-none" id="toggleNavbar">Toggle Navbar</button>
                             <nav id="navbar-example3" class="h-100 flex-column align-items-stretch">
                                 <nav class="nav nav-pills flex-column">
-                                    <a class="nav-link smoothscroll" href="#item-1">Phishing</a>
+                                    <a class="nav-link smoothscroll" href="#item-1"><strong>Phishing</strong></a>
 
                                     <a class="nav-link smoothscroll" href="#item-2"><strong>Identity Theft</strong></a>
 
@@ -50,17 +51,14 @@ https://templatemo.com/tm-588-ebook-landing
 
                                     <a class="nav-link smoothscroll" href="#item-4"><strong>Phone Frauds</strong></a>
 
-                                    <a class="nav-link smoothscroll" href="#item-5"><strong>Popup ads</strong></a>
-
-                                    <a class="nav-link smoothscroll" href="#item-5"><strong>Online dating scams</strong></a>
-
-                                    <a class="nav-link smoothscroll" href="#item-5"><strong>Repair scams</strong></a>
-
                                     <a class="nav-link smoothscroll" href="#item-5"><strong>Messaging scams</strong></a>
 
-                                    <a class="nav-link smoothscroll" href="#item-5"><strong>Fake websites</strong></a>
+                                    <a class="nav-link smoothscroll" href="#item-6"><strong>Online dating scams</strong></a>
 
-                                    <a class="nav-link smoothscroll" href="#item-5"><strong>Job offer scams</strong></a>
+                                    <a class="nav-link smoothscroll" href="#item-7"><strong>Job offer scam</strong></a>
+
+
+                                    <a class="nav-link smoothscroll" href="#item-8"><strong>Repair scams</strong></a>
                                 </nav>
                             </nav>
                         </div>
@@ -69,13 +67,14 @@ https://templatemo.com/tm-588-ebook-landing
                             <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
                                 <div class="scrollspy-example-item" id="item-1">
                                     <h5>Phishing</h5>
-
+                                    
                                     <p>
                                     Phishing is an online scam where fake emails or websites trick people into giving away personal information, leading to identity theft and fraud. Stay vigilant to avoid falling victim to these scams.</p>
 
                                     <blockquote class="blockquote">
-                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/BnmneAjVrM4?si=8jg5chIru8jsmLdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BnmneAjVrM4?si=0jxlt27Xhut4Rdfi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </blockquote>
+                                
                                     
                                     <div class ="buttonSection">
                                         <a href="#item-1">
@@ -120,17 +119,18 @@ Identity theft is when someone steals your personal information to pretend they'
                                 </div>
 
                                 <div class="scrollspy-example-item" id="item-3">
-                                    <h5>Phishing</h5>
+                                    <h5>Online Shopping</h5>
 
                                     <p>
-                                    Phishing is an online scam where fake emails or websites trick people into giving away personal information, leading to identity theft and fraud. Stay vigilant to avoid falling victim to these scams.</p>
+                                    
+Scammers create fake online stores with stolen logos and designs, offering low-priced items. They may deliver occasionally but often disappear, cautioning shoppers to be vigilant.</p>
 
                                     <blockquote class="blockquote">
-                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/BnmneAjVrM4?si=8jg5chIru8jsmLdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qRWpvcjpQNw?si=cYpVkUFHPuCzpP7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </blockquote>
                                     
                                     <div class ="buttonSection">
-                                        <a href="#item-1">
+                                        <a href="#item-2">
                                             <button type="button" class="button">Previous</button>  
                                         </a>
                                         
@@ -138,7 +138,7 @@ Identity theft is when someone steals your personal information to pretend they'
                                             <button type="button" class="button">Take Quiz</button>  
                                         </a>
 
-                                        <a href="#item-2">
+                                        <a href="#item-4">
                                             <button type="button" class="button">Next</button>  
                                         </a>
                                     </div>
@@ -147,17 +147,18 @@ Identity theft is when someone steals your personal information to pretend they'
                                 </div>
 
                                 <div class="scrollspy-example-item" id="item-4">
-                                    <h5>Phishing</h5>
+                                    <h5>Phone Frauds</h5>
 
                                     <p>
-                                    Phishing is an online scam where fake emails or websites trick people into giving away personal information, leading to identity theft and fraud. Stay vigilant to avoid falling victim to these scams.</p>
+                                    
+                                        A scam call tricks you into giving money or personal details by pretending to be from a trusted organization. Stay cautious and avoid sharing sensitive information over the phone.</p>
 
                                     <blockquote class="blockquote">
-                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/BnmneAjVrM4?si=8jg5chIru8jsmLdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OgXHUnRAwiQ?si=dYMRZXdrJQGEv5KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </blockquote>
                                     
                                     <div class ="buttonSection">
-                                        <a href="#item-1">
+                                        <a href="#item-3">
                                             <button type="button" class="button">Previous</button>  
                                         </a>
                                         
@@ -165,7 +166,7 @@ Identity theft is when someone steals your personal information to pretend they'
                                             <button type="button" class="button">Take Quiz</button>  
                                         </a>
 
-                                        <a href="#item-2">
+                                        <a href="#item-5">
                                             <button type="button" class="button">Next</button>  
                                         </a>
                                     </div>
@@ -173,19 +174,120 @@ Identity theft is when someone steals your personal information to pretend they'
                                 
                                 </div>
 
+
                                 <div class="scrollspy-example-item" id="item-5">
-                                    <h5>Habits</h5>
+                                    <h5>
+                                        Messaging scams 
+                                        
+                                    </h5>
 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>
+                                    Online messaging scams trick people via texts or social media, urging them to reveal personal info or send money. Stay vigilant to avoid falling prey to these deceptive schemes.</p>
 
-                                    <p>You are not allowed to redistribute this template ZIP file on any other template collection website. Please contact TemplateMo for more information.</p>
+                                    <blockquote class="blockquote">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lLlCc98R0_c?si=ZwZYKRfkU8OPq-6t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    </blockquote>
+                                    
+                                    <div class ="buttonSection">
+                                        <a href="#item-4">
+                                            <button type="button" class="button">Previous</button>  
+                                        </a>
+                                        
+                                        <a href="destination-page.html">
+                                            <button type="button" class="button">Take Quiz</button>  
+                                        </a>
 
-                                    <p><strong>What is Free CSS Templates?</strong> Free CSS Templates are a variety of ready-made web pages designed for different kinds of websites.</p>
-
-                                    <blockquote class="blockquote">Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito</blockquote>
-
-                                    <p>You may browse TemplateMo website for more CSS templates. Thank you for visiting our website.</p>
+                                        <a href="#item-6">
+                                            <button type="button" class="button">Next</button>  
+                                        </a>
+                                    </div>
+                                   
+                                
                                 </div>
+                                
+                                <div class="scrollspy-example-item" id="item-6">
+                                    <h5>Online dating scams </h5>
+
+                                    <p>
+                                    
+                                    Online dating scams deceive people into relationships to steal money or personal info. Verify identities to stay safe.</p>
+
+                                    <blockquote class="blockquote">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dV_IGkk6Fiw?si=lbP1YxN_TIU-Bctc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    </blockquote>
+                                    
+                                    <div class ="buttonSection">
+                                        <a href="#item-5">
+                                            <button type="button" class="button">Previous</button>  
+                                        </a>
+                                        
+                                        <a href="destination-page.html">
+                                            <button type="button" class="button">Take Quiz</button>  
+                                        </a>
+
+                                        <a href="#item-7">
+                                            <button type="button" class="button">Next</button>  
+                                        </a>
+                                    </div>
+                                   
+                                
+                                </div>
+
+                                <div class="scrollspy-example-item" id="item-7">
+                                    <h5>Job offer scams</h5>
+
+                                    <p>
+                                    
+                                    
+An online job offer scam tricks job seekers with fake opportunities, aiming to steal personal information or money. Stay cautious and verify job offers to avoid falling victim.</p>
+
+                                    <blockquote class="blockquote">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xRKZBIHZoME?si=baXiu9Hf2TS18K4x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    </blockquote>
+                                    
+                                    <div class ="buttonSection">
+                                        <a href="#item-6">
+                                            <button type="button" class="button">Previous</button>  
+                                        </a>
+                                        
+                                        <a href="destination-page.html">
+                                            <button type="button" class="button">Take Quiz</button>  
+                                        </a>
+
+                                        <a href="#item-8">
+                                            <button type="button" class="button">Next</button>  
+                                        </a>
+                                    </div>
+                                   
+                                
+                                </div>
+
+                                <div class="scrollspy-example-item" id="item-8">
+                                    <h5>Repair scams</h5>
+
+                                    <p>
+                                  
+                                    Online repair scams involve fake technicians claiming your device has issues, charging for unnecessary repairs, and potentially stealing personal information. Beware of pop-ups and verify service providers to avoid falling victim to these deceptive schemes</p>
+
+                                    <blockquote class="blockquote">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/g1ZApugPgq0?si=GhXpSxglFpf39Gh9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    </blockquote>
+                                    
+                                    <div class ="buttonSection">
+                                        <a href="#item-6">
+                                            <button type="button" class="button">Previous</button>  
+                                        </a>
+                                        
+                                        <a href="destination-page.html">
+                                            <button type="button" class="button">Take Quiz</button>  
+                                        </a>
+
+                                        
+                                    </div>
+                                   
+                                
+                                </div>
+                                
                             </div>
                         </div>
 
@@ -194,27 +296,7 @@ Identity theft is when someone steals your personal information to pretend they'
             </section>
 
 
-            <section class="author-section section-padding" id="section_3">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12">
-                            <img src="images/portrait-mature-smiling-authoress-sitting-desk.jpg" class="author-image img-fluid" alt="">
-                        </div>
-
-                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                            <h6>Meet Author</h6>
-
-                            <h2 class="mb-4">Prof. Sophia</h2>
-
-                            <p>This is an ebook landing page template with Bootstrap 5 CSS framework. It is easy to customize with the use of Bootstrap CSS classes.</p>
-
-                            <p>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor incididunt ut labore.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+           
 
 
             <section class="reviews-section section-padding" id="section_4">
