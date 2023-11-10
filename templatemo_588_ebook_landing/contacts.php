@@ -42,7 +42,7 @@ https://templatemo.com/tm-588-ebook-landing
     <body>
         <main>
 
-        <?php include 'C:\xampp\htdocs\Hackathon\navbar.php';?>
+        <?php include '..\navbar_folder.php';?>
         <section class="contact-section section-padding" id="section_5">
                 <div class="container">
                     <div class="row">

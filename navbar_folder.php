@@ -55,7 +55,7 @@
 
             
             <li class="nav-item">
-              <a class="nav-link" href="..\templatemo_588_ebook_landing\#section_5">Emergency Contacts</a>
+              <a class="nav-link" href="..\templatemo_588_ebook_landing\contacts.php">Emergency Contacts</a>
             </li>
 
 
