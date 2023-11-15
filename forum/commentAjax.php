@@ -18,13 +18,14 @@ $commentDate = $date_posted=strftime("%Y-%m-%d");
 $flag = 0;
 $likes =0;
 $dislikes =0;
-$replied=0;
+$replied= 0;
 
 $stmt->execute();
 
 // For demonstration purposes, let's simply format the comment text
-$formattedComment = '<div class="comment"><p>User: ' . htmlspecialchars($comment) . '</p></div>';
+$formattedComment = '<div class="comment"><p>User: ' . $comment . '</p></div>';
 
 // Return the formatted comment text
 echo $formattedComment;
+$conn=null;
 ?>

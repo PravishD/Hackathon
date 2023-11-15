@@ -12,12 +12,16 @@
         $(document).ready(
             function(){
                 $("form").on("submit",function(){
-                    //alert($("#comment").val());
+                    //alert($('#category').find(":selected").val());
+                    
                     $.ajax({
                         url:"commentAjax.php",
                         method:"POST",
                         data:{
-                            txt_comment:$("#comment").val()
+                            txt_comment:$("#comment").val(),
+                            //txt_category:$('#category').find(":selected").text()
+                            //txt_category:$( "#category option:selected" ).text()
+
                         },
                         success: function(data) {
                 // Append the new comment to the comment section
@@ -131,18 +135,18 @@
             <form method='post' action="<?php echo $_SERVER["PHP_SELF"]; ?>">
                 <label for="comment">Your Comment:</label>
 
-                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">Phishing</option>
-                    <option value="2">Identity Theft</option>
-                    <option value="3">Online Shopping</option>
-                    <option value="1">Phone Frauds</option>
-                    <option value="2">Messaging Scams</option>
-                    <option value="3">Online Dating Scams</option>
-                    <option value="1">Job Offer Scams</option>
-                    <option value="2">Repair Scams</option>
-                </select>
-
+                <!-- <select class="form-select form-select-sm" aria-label=".form-select-sm example" required id="category">
+                    <option>Choose category</option>
+                    <option value="Phishing">Phishing</option>
+                    <option value="Identity Theft">Identity Theft</option>
+                    <option value="Online Shopping">Online Shopping</option>
+                    <option value="Phone Frauds">Phone Frauds</option>
+                    <option value="Messaging Scams">Messaging Scams</option>
+                    <option value="Online Dating Scams">Online Dating Scams</option>
+                    <option value="Job Offer Scams">Job Offer Scams</option>
+                    <option value="Repair Scams">Repair Scams</option>
+                </select> -->
+                <br>
                 <textarea id="comment" placeholder="Leave a comment" name="txt_comment" rows="4" required></textarea>
                 <button class="btn-primary" type="submit">Submit Comment</button>
             </form>
